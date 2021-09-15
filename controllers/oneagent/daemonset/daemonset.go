@@ -20,7 +20,7 @@ import (
 const (
 	labelFeature = "operator.dynatrace.com/feature"
 
-	annotationUnprivileged      = "container.apparmor.security.beta.kubernetes.io/dynatrace-oneagent"
+	annotationUnprivileged      = "container.apparmor.security.kubernetes.io/dynatrace-oneagent"
 	annotationUnprivilegedValue = "unconfined"
 
 	defaultServiceAccountName             = "dynatrace-dynakube-oneagent"

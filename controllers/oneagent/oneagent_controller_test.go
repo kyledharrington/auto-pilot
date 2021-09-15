@@ -481,12 +481,12 @@ func TestNewDaemonset_Affinity(t *testing.T) {
 		assert.NotContains(t, affinity.NodeAffinity.RequiredDuringSchedulingIgnoredDuringExecution.NodeSelectorTerms, corev1.NodeSelectorTerm{
 			MatchExpressions: []corev1.NodeSelectorRequirement{
 				{
-					Key:      "beta.kubernetes.io/arch",
+					Key:      "kubernetes.io/arch",
 					Operator: corev1.NodeSelectorOpIn,
 					Values:   []string{"amd64", "arm64"},
 				},
 				{
-					Key:      "beta.kubernetes.io/os",
+					Key:      "kubernetes.io/os",
 					Operator: corev1.NodeSelectorOpIn,
 					Values:   []string{"linux"},
 				},
